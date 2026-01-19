@@ -7,7 +7,7 @@ namespace cli_tasktracker.controllers
 {
     internal class TaskManager
     {
-        public List<models.Task> tasks;
+        private List<models.Task> tasks;
 
         public TaskManager()
         {
@@ -18,7 +18,7 @@ namespace cli_tasktracker.controllers
         {
             if (FindById(task.id) != null)
             {
-                throw new Exception("Task with the same ID already exists.");
+                throw new InvalidOperationException("Task with the same ID already exists.");
             }
             tasks.Add(task);
         }
@@ -33,7 +33,7 @@ namespace cli_tasktracker.controllers
             var existingTask = FindById(task.id);
             if (existingTask == null)
             {
-                throw new Exception("Task not found.");
+                throw new InvalidOperationException("Task not found.");
             } 
             else
             {

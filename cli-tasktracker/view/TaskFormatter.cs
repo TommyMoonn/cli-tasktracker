@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace cli_tasktracker.ui
+namespace cli_tasktracker.view
 {
-    internal class Menu
+    internal class TaskFormatter
     {
     }
 }

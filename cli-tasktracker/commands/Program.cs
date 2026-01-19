@@ -1,4 +1,4 @@
-﻿namespace Dispatcher;
+﻿namespace cli_tasktracker.dispatcher;
 using System.Globalization;
 
 class TaskTracker
