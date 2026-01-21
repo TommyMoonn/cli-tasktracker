@@ -4,7 +4,7 @@ using System.Text;
 
 namespace cli_tasktracker.models
 {
-    internal enum TaskStatus // Enum to represent the task status
+    enum TaskStatus // Enum to represent the task status
     {
         Pending,
         InProgress,
@@ -13,14 +13,14 @@ namespace cli_tasktracker.models
         Cancelled
     }
 
-    internal enum TaskPriority // Enum to represent the task priority
+    enum TaskPriority // Enum to represent the task priority
     {
         Low,
         Medium,
         High
     }
 
-    internal class Task
+    class Task
     {
         public string id { get; } // TaskID is read-only, can't be changed after creation 
         public string name { get; set; }

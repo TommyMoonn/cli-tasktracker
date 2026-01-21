@@ -1,10 +1,11 @@
-﻿namespace cli_tasktracker.dispatcher;
-using System.Globalization;
+﻿using System.Globalization;
+using cli_tasktracker.controllers;
 
-class TaskTracker
+namespace cli_tasktracker.dispatcher;
+class Program
 {
     static void Main(string[] args)
     { 
-        
+
     }
 }

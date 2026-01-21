@@ -5,7 +5,7 @@ using cli_tasktracker.models;
 
 namespace cli_tasktracker.controllers
 {
-    internal class TaskManager
+    class TaskManager
     {
         private List<models.Task> tasks;
 
