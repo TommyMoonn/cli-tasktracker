@@ -27,7 +27,7 @@ namespace cli_tasktracker.models
         public string description { get; set; } 
         public TaskStatus status { get; set; }
         public TaskPriority priority { get; set; }
-        
+
         public Task(string id, string name, string description)
         {
             this.id = id;
